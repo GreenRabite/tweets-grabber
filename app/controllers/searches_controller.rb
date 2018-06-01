@@ -8,9 +8,10 @@ class SearchesController < ApplicationController
     end
     @search = params[:search][:username]
     begin
-      @tweets = @client.user_timeline("#{@search}",{count: 2})
+      @tweets = @client.user_timeline("#{@search}",{count: 25})
     rescue
-      render json: "Username does not exist or is private", status: 404
+      redirect_to static_pages_404_url
+      return
     end
     render 'static_pages/index'
   end

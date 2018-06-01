@@ -13,15 +13,13 @@
   <h1>
     <%= @search %>'s Tweets!
   </h1>
-  <% @tweets.each do |tweet| %>
-    <div class="tweet-box">
+  <div id="tweet-container">
+    <% @tweets.each do |tweet| %>
+    <div class="tweet-box" data-url="<%=tweet.uri%>">
       <h3>
         <%= tweet.full_text %>
       </h3>
-      <h3>
-        <%= tweet.source %>
-      </h3>
-
-    </div>
-  <% end %>
+      </div>
+    <% end %>
+  </div>
 <% end %>
