@@ -3,8 +3,25 @@
 <h3>Find The Latest Tweets from Your Favorite Users!</h3>
 
 <form action="<%= searches_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label>Username
-    <input type="text" name="searches[username]" value="">
+    <input type="text" name="search[username]" value="">
   </label>
   <input type="submit" value="Search">
 </form>
+<% if @tweets %>
+  <h1>
+    <%= @search %>'s Tweets!
+  </h1>
+  <% @tweets.each do |tweet| %>
+    <div class="tweet-box">
+      <h3>
+        <%= tweet.full_text %>
+      </h3>
+      <h3>
+        <%= tweet.source %>
+      </h3>
+
+    </div>
+  <% end %>
+<% end %>
