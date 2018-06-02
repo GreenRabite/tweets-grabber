@@ -3,19 +3,49 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background: #c0deed;
+  background: #1dcaff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  h1{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+input[type=text] {
+  height: 30px;
+  width: 200px;
+  text-indent: 30px;
+}
+
+#input{
+  position: relative;
+}
+
+#input label > img{
+  position: absolute;
+  width: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .tweet-box{
   width: 30%;
   min-height: 100px;
-  border: 1px dashed white;
+  border: 1px solid #c0deed;
   margin: 5px;
+  background: white;
 }
 
 .tweet-box:hover{
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   border: 1px solid white;
+  background: #c0deed;
   cursor: pointer;
 }
 

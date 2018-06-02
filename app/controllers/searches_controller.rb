@@ -6,7 +6,7 @@ class SearchesController < ApplicationController
       config.access_token        = ENV["ACCESS_TOKEN"]
       config.access_token_secret = ENV["ACCESS_TOKEN_SECRET"]
     end
-    @search = params[:search][:username]
+    @search = (params[:search][:username])
     begin
       @tweets = @client.user_timeline("#{@search}",{count: 25})
     rescue

@@ -1,17 +1,20 @@
-<h1>Tweets Display Galore</h1>
+<h1>Tweets Display</h1>
 
 <h3>Find The Latest Tweets from Your Favorite Users!</h3>
 
 <form action="<%= searches_url %>" method="POST">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <label>Username
-    <input type="text" name="search[username]" value="">
-  </label>
+  <div id="input">
+    <label>Twitter Handle
+      <img src="/assets/twitter.png" alt="">
+      <input type="text" name="search[username]" value="" placeholder="@dan_abramov" required>
+    </label>
+  </div>
   <input type="submit" value="Search">
 </form>
 <% if @tweets %>
   <h1>
-    <%= @search %>'s Tweets!
+    <%= sanitize @search %>'s Tweets!
   </h1>
   <div id="tweet-container">
     <% @tweets.each do |tweet| %>
