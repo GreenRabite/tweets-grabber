@@ -1,4 +1,4 @@
-const tweets = document.querySelectorAll(".tweet-box");
+var tweets = document.querySelectorAll(".tweet-box");
 tweets.forEach(tweet=>{
   tweet.addEventListener('click',openURL);
 });
