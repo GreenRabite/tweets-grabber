@@ -30,3 +30,8 @@ Technologies used for the web application is as follows:
 ### Workflow For Private/Not Existing User
 
 ![UploadExample](https://raw.githubusercontent.com/GreenRabite/tweets-grabber/master/public/assets/gifs/tweetsnotworkingworkflow.gif)
+
+## Future Improvements
+
+* Use a frontend framework like `React` to control the views.
+* More styling to display the tweets more graphically appealing
