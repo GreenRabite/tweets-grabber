@@ -25,8 +25,8 @@ Technologies used for the web application is as follows:
 
 ### Workflow to Obtain Tweets from Twitter Handle
 
-![UploadExample](https://media.giphy.com/media/3o6nV08RL4xbace1vG/giphy.gif)
+![UploadExample](https://github.com/GreenRabite/tweets-grabber/blob/master/public/assets/gifs/tweetsworkflow.gif?raw=true)
 
 ### Workflow For Private/Not Existing User
 
-![UploadExample](https://media.giphy.com/media/3o6nV08RL4xbace1vG/giphy.gif)
+![UploadExample](https://raw.githubusercontent.com/GreenRabite/tweets-grabber/master/public/assets/gifs/tweetsnotworkingworkflow.gif)
